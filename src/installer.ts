@@ -75,7 +75,7 @@ async function downloadRelease(version: string): Promise<string> {
   // Download
   const fileName: string = getFileName(version, osPlat, osArch);
   const downloadUrl: string = util.format(
-    "https://github.com/protocolbuffers/protobuf/releases/download/%s/%s",
+    "https://gh-proxy.com/github.com/protocolbuffers/protobuf/releases/download/%s/%s",
     version,
     fileName,
   );
