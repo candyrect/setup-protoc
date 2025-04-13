@@ -97,7 +97,7 @@ function downloadRelease(version) {
     return __awaiter(this, void 0, void 0, function* () {
         // Download
         const fileName = getFileName(version, osPlat, osArch);
-        const downloadUrl = util.format("https://github.com/protocolbuffers/protobuf/releases/download/%s/%s", version, fileName);
+        const downloadUrl = util.format("https://gh-proxy.com/github.com/protocolbuffers/protobuf/releases/download/%s/%s", version, fileName);
         process.stdout.write("Downloading archive: " + downloadUrl + os.EOL);
         let downloadPath = null;
         try {
